@@ -52,7 +52,7 @@ main{
 
 /* Form section */
 form{
-    margin: 2em; 
+    margin: 2em 0; 
     display: flex;
     justify-content: left;
     align-items: center;
@@ -69,8 +69,8 @@ form{
     }
 
     #color-scheme{
-        width: 50vw;
-        padding: 0 1em;
+        display: block; 
+        padding: 0 3em 0 1em;
         font-weight: 500;
         font-size: 1.2rem;
         appearance: none;
@@ -99,24 +99,25 @@ ______________________________________ */
 
 @media (max-width: 400px) {
    
+    
+    #color-picker{
+        margin:0 .5em;
+    }
+
+    #color-scheme{
+        margin: 0 .5em;
+        font-size: .8rem;
+        line-height: 2.5rem;
+    } 
+
+    #generated-colors{
+        font-size: 0.8rem;
+    }
+
     .hex-info{
-        height:10vh;
+        height: 10%;
         justify-content: center;
         align-items: center;
     }
     
-    form{
-        justify-content: space-between;
-    }
-    #color-picker{
-        margin:0 .5em;
-    }
-    #color-scheme{
-        margin:0 .5em;
-    }
-    #generated-colors{
-        font-size: 0.8rem;
-        
-    }
-   
 } 
