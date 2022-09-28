@@ -99,6 +99,9 @@ ______________________________________ */
 
 @media (max-width: 400px) {
    
+    main{
+        height: 80vh;
+    }
     
     #color-picker{
         margin:0 .5em;
