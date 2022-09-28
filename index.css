@@ -5,6 +5,9 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
 /* ______________________________________
            
                 Sections
@@ -13,10 +16,14 @@ ______________________________________ */
 main{
     padding: 0;
     margin: 0 auto;
-    width: 97vw;
-    max-width: 650px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 800px;
     background-color: rgb(255, 255, 255);
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 
@@ -24,52 +31,63 @@ main{
 #generated-colors{ 
     display: flex;
     flex-direction: row;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
 }
     .color-item{ 
         width: 20%;
-        height: 70vh;
+        height: 90vh;
         display: flex;
-        flex-direction: column;
+        flex-direction:column-reverse;
         justify-content: end;
+        align-items: center;
     }
-
     .hex-info{
         width: 100%;
-        height: 6vh;
+        height: 15vh;
         background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 
 
 /* Form section */
 form{
-    margin-top: 2em;
-    padding: 1em;
+    margin: 2em; 
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
     #color-picker{
-        width: 3.8em;
-        height: 3.2em;
-        border: none;
-        margin: 0 2em;
-        border: 1px solid #374151;
+        width: 4em;
+        height: 40.4px;
+        border: 1px solid rgb(4, 4, 8);
+        margin: 0 2em; 
+        padding: 0px 2px;
+        border-radius: 5px;
+        
     }
 
     #color-scheme{
-        width: 25em;
-        height: 3.2em;
-        padding: 0 .5em;
-        margin: 0 1em;
+        width: 50vw;
+        padding: 0 1em;
         font-weight: 500;
-        border: 1px solid #374151;
+        font-size: 1.2rem;
+        appearance: none;
+        -webkit-appearance: none;
+        line-height: 2em;
+        border-radius: 5px;
+    }
+
+    .select-wraper{
+        position: relative;
+    }
+
+    .select-arrow{
+        position: absolute;
+        right: 1em;
+        bottom: 50%;
+        transform: translateY(50%);
     }
 
 
@@ -80,21 +98,26 @@ ______________________________________ */
 
 
 @media (max-width: 400px) {
+    main{
+        width: 100vw;
+    }
+   
     .hex-info{
         height:10vh;
         justify-content: center;
         align-items: center;
     }
-        .hex-info h4{
-            transform: rotate(-45deg);
-        }
+    
     form{
-        padding:.5em;
+        justify-content: space-between;
     }
     #color-picker{
-        margin: 0;
+        margin: .5em;
     }
     #color-scheme{
-        margin: 0.5em;
+        margin: .5em;
     }
-}
+    #generated-colors{
+        font-size: 0.8rem;
+    }
+} 

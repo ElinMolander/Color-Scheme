@@ -14,16 +14,20 @@
     <main>     
         <form>
             <input id="color-picker" type="color" value="#FF0000">
-            <select id="color-scheme">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-            </select>        
-          </form>
+            <div class="select-wraper">
+                <select id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>   
+                <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" class="select-arrow">
+                <path d="M5.558 6.442L4.5 7.5 9 12l4.5-4.5-1.057-1.058L9 9.877 5.558 6.442z" fill="currentColor"></path></svg>     
+            </div>  
+        </form>
         <div id="generated-colors"></div>
     </main>   
     <script src="index.js"></script>

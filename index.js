@@ -34,3 +34,4 @@ function updateColorBoxes(){
 
 // Initialisation on page load
 updateColorBoxes()
+
