@@ -98,11 +98,17 @@ ______________________________________ */
 
 
 @media (max-width: 400px) {
+    body{
+        background-color:  rgb(255, 255, 255);
+    }
    
     main{
         height: 90%;
     }
-    
+    .color-item{ 
+        
+        height: 70vh;
+    }
     #color-picker{
         margin:0 .5em;
     }
