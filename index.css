@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 4, 8);
+    font-family: 'Inter', sans-serif;
+}
+
+/* ______________________________________
+           
+                Sections
+______________________________________ */
+
+main{
+    padding: 0;
+    margin: 0 auto;
+    width: 97vw;
+    max-width: 650px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+
+/* Color section */
+#generated-colors{ 
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+    .color-item{ 
+        width: 20%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .hex-info{
+        width: 100%;
+        height: 6vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+/* Form section */
+form{
+    margin-top: 2em;
+    padding: 1em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+    #color-picker{
+        width: 3.8em;
+        height: 3.2em;
+        border: none;
+        margin: 0 2em;
+        border: 1px solid #374151;
+    }
+
+    #color-scheme{
+        width: 25em;
+        height: 3.2em;
+        padding: 0 .5em;
+        margin: 0 1em;
+        font-weight: 500;
+        border: 1px solid #374151;
+    }
+
+
+/* ______________________________________
+           
+            Media Queries
+______________________________________ */
+
+
+@media (max-width: 400px) {
+    .hex-info{
+        height:10vh;
+        justify-content: center;
+        align-items: center;
+    }
+        .hex-info h4{
+            transform: rotate(-45deg);
+        }
+    form{
+        padding:.5em;
+    }
+    #color-picker{
+        margin: 0;
+    }
+    #color-scheme{
+        margin: 0.5em;
+    }
+}
