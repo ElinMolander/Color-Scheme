@@ -98,9 +98,6 @@ ______________________________________ */
 
 
 @media (max-width: 400px) {
-    main{
-        width: 100vw;
-    }
    
     .hex-info{
         height:10vh;
@@ -112,12 +109,14 @@ ______________________________________ */
         justify-content: space-between;
     }
     #color-picker{
-        margin: .5em;
+        margin:0 .5em;
     }
     #color-scheme{
-        margin: .5em;
+        margin:0 .5em;
     }
     #generated-colors{
         font-size: 0.8rem;
+        
     }
+   
 } 
