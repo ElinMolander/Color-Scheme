@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: rgb(4, 4, 8);
@@ -13,7 +13,7 @@ body{
                 Sections
 ______________________________________ */
 
-main{
+main {
     padding: 0;
     margin: 0 auto;
     width: 100vw;
@@ -23,18 +23,19 @@ main{
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
 }
 
 
 /* Color section */
-#generated-colors{ 
+
+
+#generated-colors { 
     display: flex;
     flex-direction: row;
     font-size: 1rem;
     font-weight: 500;
 }
-    .color-item{ 
+    .color-item { 
         width: 20%;
         height: 80vh;
         display: flex;
@@ -42,7 +43,7 @@ main{
         justify-content: end;
         align-items: center;
     }
-    .hex-info{
+    .hex-info { 
         width: 100%;
         height:10vh;
         background-color: rgb(255, 255, 255);
@@ -51,24 +52,24 @@ main{
 
 
 /* Form section */
-form{
+
+form {
     margin: 2em 0; 
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-    #color-picker{
+    #color-picker {
         width: 4em;
         height: 40.4px;
         border: 1px solid rgb(4, 4, 8);
         margin: 0 2em; 
         padding: 0px 2px;
         border-radius: 5px;
-        
     }
 
-    #color-scheme{
+    #color-scheme {
         display: block; 
         padding: 0 3em 0 1em;
         font-weight: 500;
@@ -79,11 +80,11 @@ form{
         border-radius: 5px;
     }
 
-    .select-wraper{
+    .select-wraper {
         position: relative;
     }
 
-    .select-arrow{
+    .select-arrow {
         position: absolute;
         right: 1em;
         bottom: 50%;
@@ -98,35 +99,34 @@ ______________________________________ */
 
 
 @media (max-width: 400px) {
-    body{
+    body {
         background-color:  rgb(255, 255, 255);
     }
    
-    main{
+    main {
         height: 90%;
     }
-    .color-item{ 
+    .color-item { 
         
         height: 70vh;
     }
-    #color-picker{
+    #color-picker {
         margin:0 .5em;
     }
 
-    #color-scheme{
+    #color-scheme {
         margin: 0 .5em;
         font-size: .8rem;
         line-height: 2.5rem;
     } 
 
-    #generated-colors{
+    #generated-colors {
         font-size: 0.8rem;
     }
 
-    .hex-info{
+    .hex-info {
         height: 10%;
         justify-content: center;
         align-items: center;
     }
-    
 } 
